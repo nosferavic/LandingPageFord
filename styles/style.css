@@ -8,8 +8,8 @@
 
 :root {
   --black: #2f2f2f;
-  --red: #ffffff;
-  --white: #f83038;
+  --red: #f83038;
+  --white: #ffffff;
 }
 
 .main {
@@ -23,13 +23,48 @@
   flex-direction: column;
 }
 
-.main::before{
-  content: 'PuroSangue';
+.main::before {
+  content: "PuroSangue";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 16vw;
   font-weight: 700;
-  color: rgba(255,255,255, 0.05);
+  color: rgba(255, 255, 255, 0.05);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 80px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.navigation li a {
+  position: relative;
+  color: var(--white);
+  margin-left: 40px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.navigation li a:hover{
+  color: var(--red);
 }
